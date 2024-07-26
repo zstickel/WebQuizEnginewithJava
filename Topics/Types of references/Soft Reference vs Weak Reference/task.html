@@ -1,0 +1,14 @@
+<h2>Soft Reference vs Weak Reference</h2>
+<div class="step-text">
+<p></p>
+<p>Suppose you have the following code:</p>
+<pre><code class="language-java">public class ReferenceTypesDemo {
+    public static void main(String[] args) {
+        Integer num = 1995;
+        SoftReference&lt;Integer&gt; softReference = new SoftReference&lt;&gt;(num);
+        WeakReference&lt;Integer&gt; weakReference = new WeakReference&lt;&gt;(num);
+        num = null;
+    }
+}</code></pre>
+<p>Will the object created for the <code class="language-java">num</code> variable survive garbage collections until the application is close to running out of memory?</p>
+</div>
